@@ -19,7 +19,7 @@ namespace DataAccess.Mapping
                 .ForMember(dest => dest.Radius, opt => opt.MapFrom(src => Convert.ToInt16(src.Raidus)));
 
             CreateMap<SatelliteDTO, Satellite>()
-                .ForMember(dest => dest.Raidus, opt => opt.MapFrom(src => Convert.ToInt16(src.Radius)))
+                .ForMember(dest => dest.Raidus, opt => opt.MapFrom(src => Convert.ToInt16(src.Radius)));
             CreateMap<Satellite, SatelliteDTO>()
                 .ForMember(dest => dest.Radius, opt => opt.MapFrom(src => Convert.ToInt16(src.Raidus)));
                 

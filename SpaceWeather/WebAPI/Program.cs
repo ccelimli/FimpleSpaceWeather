@@ -4,8 +4,6 @@ using DataAccess;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
-using Microsoft.Extensions.DependencyInjection;
 using DataAccess.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
